@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #502050;
+}
+
+/**************************/
+/* section social proof */
+/**************************/
+
+.social-proof {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.2rem;
+  align-items: center;
+  padding: 12.8rem;
+  background-image: url(../img/bg-pattern-bottom-desktop.svg),
+    url(../img/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom, left top;
+}
+
+/**************************/
+/* social proof rates*/
+/**************************/
+
+.social-proof-rates {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 6.4rem;
+  padding: 3.2rem;
+}
+
+.user-heading {
+  font-size: 4.4rem;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  margin-bottom: 3.2rem;
+  padding-right: 3.2rem;
+}
+
+.user-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding-right: 2.4rem;
+}
+
+.rates-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.rate {
+  background-color: #eee9ee;
+  padding: 2rem;
+  width: 75%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 9px;
+  text-align: center;
+}
+.rate-first {
+  justify-self: first baseline;
+}
+.rate-second {
+  justify-self: center;
+}
+.rate-third {
+  justify-self: end;
+}
+
+.icon {
+  margin-right: 2.4rem;
+}
+
+.icon-star {
+  color: hsl(39, 100%, 48%);
+  margin-right: 0.4rem;
+}
+
+/**************************/
+/* social proof testimonials*/
+/**************************/
+
+.social-proof-testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+  align-items: center;
+  padding: 3.2rem;
+}
+
+.testimonials {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 9px;
+  height: 100%;
+
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: hsl(300, 24%, 96%);
+  padding: 2.4rem;
+}
+
+.testimonials-first {
+  transform: translateY(-20px);
+}
+
+.testimonials-third {
+  transform: translateY(20px);
+}
+
+.heading-box {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.user-img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-weight: 700;
+}
+.user-title {
+  color: hsl(333, 80%, 67%);
+}
+
+/**************************/
+/* BELOW 375px (mobile) */
+/**************************/
+
+@media (max-width: 24em) {
+  .social-proof {
+    gap: 2.4rem;
+    padding: 1.2rem;
+    background-image: url(../img/bg-pattern-bottom-mobile.svg),
+      url(../img/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom, left top;
+  }
+
+  .user-heading {
+    font-size: 3.6rem;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .user-text {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .social-proof-rates {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    padding: 2.4rem;
+  }
+
+  .rate {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .rate-first,
+  .rate-second,
+  .rate-third {
+    justify-self: center;
+  }
+
+  .icon {
+    margin-right: 0;
+  }
+  .social-proof-testimonials {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 2.4rem;
+  }
+}
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
